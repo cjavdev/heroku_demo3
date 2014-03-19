@@ -1,5 +1,5 @@
 class TestMailer < ActionMailer::Base
-  default from: "from@yourdomain.com"
+  default from: "Mr. President <barack.obama@whitehouse.gov>"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -8,7 +8,6 @@ class TestMailer < ActionMailer::Base
   #
   def test
     @greeting = "Hi"
-
     mail to: "cj@appacademy.io"
   end
 end
